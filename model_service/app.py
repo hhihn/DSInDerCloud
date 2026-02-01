@@ -22,17 +22,7 @@ def health():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    if not model_loaded:
-        return jsonify({"error": "model not loaded"}), 500
-
-    data = request.get_json()
-    features = data.get("features")
-
-    if features is None:
-        return jsonify({"error": "missing features"}), 400
-
-    prediction = model.predict([features])
-    return jsonify({"prediction": int(prediction[0])})
+    pass
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

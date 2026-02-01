@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2774db-3e52-4ed6-becb-e1d463ca5b80" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/build-images.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_service/data/churn_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kedro_pipeline/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kuberenetes/kedro-job.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kuberenetes/model-service-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/model-service-deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kuberenetes/model-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/model-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kuberenetes/pvc.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/model_service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_service/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_service/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_service/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/model_service/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="1a2774db-3e52-4ed6-becb-e1d463ca5b80" name="Changes" comment="init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -81,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "start",
     "last_opened_file_path": "/Users/heinke.hihn/PycharmProjects/DSInDerCloud/model_service/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -122,7 +111,7 @@
       <updated>1769777203735</updated>
       <workItem from="1769777204763" duration="3852000" />
       <workItem from="1769795031295" duration="4207000" />
-      <workItem from="1769854892812" duration="5229000" />
+      <workItem from="1769854892812" duration="5760000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -140,7 +129,23 @@
       <option name="project" value="LOCAL" />
       <updated>1769796124840</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <option name="closed" value="true" />
+      <created>1769945549278</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769945549278</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init">
+      <option name="closed" value="true" />
+      <created>1769945671160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769945671160</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
