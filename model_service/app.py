@@ -4,7 +4,6 @@ import os
 
 app = Flask(__name__)
 
-MODEL_PATH = os.getenv("MODEL_PATH", "/data/model.pkl")
 
 # Modell beim Start laden
 try:
