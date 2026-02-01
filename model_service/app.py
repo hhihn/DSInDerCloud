@@ -1,13 +1,12 @@
 from flask import Flask, request, jsonify
 import joblib
 import os
-import time
 
 app = Flask(__name__)
 
 MODEL_PATH = os.getenv("MODEL_PATH", "/data/model.pkl")
 
-# Modell beim Start laden (wichtig!)
+# Modell beim Start laden
 try:
     model = joblib.load(MODEL_PATH)
     model_loaded = True
@@ -18,32 +17,23 @@ except Exception as e:
 @app.route("/health")
 def health():
     if model_loaded:
-        return jsonify({
-            "status": "healthy",
-            "model": "loaded"
-        }), 200
+        return jsonify({"status": "healthy", "model": "loaded"}), 200
     else:
-        return jsonify({
-            "status": "unhealthy",
-            "error": load_error
-        }), 500
-
+        return jsonify({"status": "unhealthy", "error": load_error}), 500
 
 @app.route("/predict", methods=["POST"])
 def predict():
     if not model_loaded:
-        return jsonify({"error": "Model not loaded"}), 500
+        return jsonify({"error": "model not loaded"}), 500
 
     data = request.get_json()
+    features = data.get("features")
 
-    if "features" not in data:
-        return jsonify({"error": "Missing 'features'"}), 400
-
-    features = data["features"]
+    if features is None:
+        return jsonify({"error": "missing features"}), 400
 
     prediction = model.predict([features])
+    return jsonify({"prediction": int(prediction[0])})
 
-    return jsonify({
-        "prediction": prediction[0],
-        "timestamp": time.time()
-    })
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

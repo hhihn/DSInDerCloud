@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: model-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: model-service
@@ -20,26 +20,16 @@ spec:
             - containerPort: 5000
           env:
             - name: MODEL_PATH
-              value: /data/model.pkl
-          volumeMounts:
-            - mountPath: /data
-              name: model-storage
-
+              value: /app/data/churn_model.pkl
           livenessProbe:
             httpGet:
               path: /health
               port: 5000
             initialDelaySeconds: 5
             periodSeconds: 10
-
           readinessProbe:
             httpGet:
               path: /health
               port: 5000
             initialDelaySeconds: 5
             periodSeconds: 5
-
-      volumes:
-        - name: model-storage
-          persistentVolumeClaim:
-            claimName: model-pvc

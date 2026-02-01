@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: model-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: model-service
   ports:
     - port: 5000
       targetPort: 5000
+      nodePort: 30050
