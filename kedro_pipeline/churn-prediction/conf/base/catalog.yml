@@ -1,0 +1,39 @@
+# aufgaben des data catalogs: verwaltung der daten. hier werden die pfade und dateitypen
+# angegeben. diese werden von den pipelines benötigt, um die richtigen daten zu laden
+# und zu speichern
+
+# input von node 1 in clean_data
+users_raw: # der name im code. die referenz
+  type: pandas.CSVDataset # datentyp, hier als CSV datei beschrieben
+  filepath: data/01_raw/customer_subscription_churn_usage_patterns.csv # der pfad
+
+# output von node 2 clean_data
+user_clean:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/users_clean.parquet
+
+# output von node 1 train_model
+X_train:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/X_train.parquet
+
+y_train:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/y_train.parquet
+
+X_test:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/X_test.parquet
+
+y_test:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/y_test.parquet
+
+churn_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/churn_model.pkl
+
+model_metrics:
+  type: json.JSONDataset
+  filepath: data/08_model_reporting/model_metrics.json
+

@@ -9,3 +9,10 @@ docker run kedro_pipeline:latest
 # mit pod verbinden
 
 kubectl exec -it model-service-6d8f9c7c8d-abcde -- sh
+
+# vorhersage aufrufen
+curl -X POST http://127.0.0.1:5000/predict \
+  -H "Content-Type: application/json" \
+  -d '{
+        "features": [699, 12.5, 2, 0, 18, 7]
+      }'

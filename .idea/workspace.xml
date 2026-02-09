@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2774db-3e52-4ed6-becb-e1d463ca5b80" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/data/01_raw/customer_subscription_churn_usage_patterns.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/requirements.txt" afterDir="false" />
+    <list default="true" id="1a2774db-3e52-4ed6-becb-e1d463ca5b80" name="Changes" comment="updated requirements">
+      <change afterPath="$PROJECT_DIR$/model_service/data/churn_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands" beforeDir="false" afterPath="$PROJECT_DIR$/commands" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/conf/base/catalog.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/conf/base/catalog.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/src/churn_prediction/pipelines/clean_data/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/src/churn_prediction/pipelines/clean_data/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/src/churn_prediction/pipelines/train_model/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/kedro_pipeline/churn-prediction/src/churn_prediction/pipelines/train_model/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/model_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_service/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_service/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +93,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/model_service/data" />
+      <recent name="$PROJECT_DIR$/kedro_pipeline/churn-prediction/data/01_raw" />
       <recent name="$PROJECT_DIR$/kedro_pipeline/churn-prediction/src/churn_prediction/pipelines/clean_data" />
       <recent name="$PROJECT_DIR$/data" />
     </key>
@@ -115,6 +122,7 @@
       <workItem from="1769777204763" duration="3852000" />
       <workItem from="1769795031295" duration="4207000" />
       <workItem from="1769854892812" duration="5760000" />
+      <workItem from="1770102826816" duration="450000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
